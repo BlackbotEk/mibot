@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <accessibility-service
+        android:accessibilityEventTypes="{eventTypes}"
+        android:packageNames="{packageNames}"
+        android:description="{description}"
+        android:settingsActivity="{settingsActivity}"
+        android:accessibilityFeedbackType="{feedbackType}"
+        android:notificationTimeout="{timeout}"
+        android:canRetrieveWindowContent="{canRetrieveWindowContent}"
+        android:description="{description}"
+        android:canRequestTouchExplorationMode="{canRequestTouchExplorationMode}" />
+</resources>
