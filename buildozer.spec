@@ -28,5 +28,5 @@ android.archs = arm64-v8a
 android.gradle_dependencies = 
 
 [buildozer]
-olog_level = 2
+log_level = 2
 warn_on_root = 1
