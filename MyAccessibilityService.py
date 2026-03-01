@@ -1,20 +1,18 @@
-from jnius import autoclass, cast
-from android.runnable import run_on_ui_thread
-
-PythonService = autoclass('org.renpy.android.PythonService')
-service = PythonService.mService
+# MyAccessibilityService.py
 
 class MyAccessibilityService:
     def __init__(self):
-        self.enabled = False
-    
-    def on_service_connected(self):
-        print("Servicio de Accesibilidad Conectado")
-        self.enabled = True
-    
-    def on_service_disconnected(self):
-        print("Servicio de Accesibilidad Desconectado")
-        self.enabled = False
+        # Initialization code here
+        pass
 
-# Instancia global
-accessibility_service = MyAccessibilityService()
+    def on_service_connected(self):
+        # Code to run when the service is connected
+        print('Service connected')
+
+    def on_accessibility_event(self, event):
+        # Handle accessibility events
+        print(f'Accessibility event: {event}')
+
+    def on_destroy(self):
+        # Code to run when the service is destroyed
+        print('Service destroyed')
