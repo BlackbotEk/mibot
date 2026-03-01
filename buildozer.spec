@@ -8,7 +8,7 @@ source.include_exts = py,png,jpg,kv,atlas,xml
 version = 1.0.0
 
 # REQUISITOS: Solo lo necesario para Kivy y Android
-requirements = python3,kivy,android
+requirements = python3,kivy
 
 orientation = portrait
 fullscreen = 0
