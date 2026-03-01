@@ -1,13 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <accessibility-service
-        android:accessibilityEventTypes="{eventTypes}"
-        android:packageNames="{packageNames}"
-        android:description="{description}"
-        android:settingsActivity="{settingsActivity}"
-        android:accessibilityFeedbackType="{feedbackType}"
-        android:notificationTimeout="{timeout}"
-        android:canRetrieveWindowContent="{canRetrieveWindowContent}"
-        android:description="{description}"
-        android:canRequestTouchExplorationMode="{canRequestTouchExplorationMode}" />
-</resources>
+<accessibility-service
+    android:description="Accessibility service for Mi Bot."
+    android:label="Mi Bot"
+    android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE"
+    android:settingsActivity=".SettingsActivity">
+
+    <intent-filter>
+        <action android:name="android.accessibilityservice.AccessibilityService" />
+    </intent-filter>
+
+    <canRetrieveWindowContent>true</canRetrieveWindowContent>
+    <notificationTimeout>100</notificationTimeout>
+    <requiresPermission>android.permission.SYSTEM_ALERT_WINDOW</requiresPermission>
+</accessibility-service>
